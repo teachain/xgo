@@ -279,7 +279,7 @@ func compile(image string, config *ConfigFlags, flags *BuildFlags, folder string
 		}
 	}
 	// Assemble and run the cross compilation command
-	fmt.Printf("Cross compiling %s...\n", config.Repository)
+	fmt.Printf("Cross compiling Repository=%s;folder=%s;config.Package=%s\n", config.Repository,folder,config.Package)
 
 	args := []string{
 		"run", "--rm",
